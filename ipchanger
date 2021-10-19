@@ -1,0 +1,38 @@
+#!/bin/bash
+echo"
+echo" /$$                     /$$                                                         "
+echo"|__/                    | $$                                                         "
+echo" /$$  /$$$$$$   /$$$$$$$| $$$$$$$   /$$$$$$  /$$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$$ "
+echo"| $$ /$$__  $$ /$$_____/| $$__  $$ |____  $$| $$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ "
+echo"| $$| $$  \ $$| $$      | $$  \ $$  /$$$$$$$| $$  \ $$| $$  \ $$| $$$$$$$$| $$  \__/ "
+echo"| $$| $$  | $$| $$      | $$  | $$ /$$__  $$| $$  | $$| $$  | $$| $$_____/| $$       " 
+echo"| $$| $$$$$$$/|  $$$$$$$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$$|  $$$$$$$| $$       "
+echo"|__/| $$____/  \_______/|__/  |__/ \_______/|__/  |__/ \____  $$ \_______/|__/       "
+echo"    | $$                                               /$$  \ $$                     "
+echo"    | $$                                              |  $$$$$$/                     "
+echo"    |__/                                               \______/                      "
+echo"******************* we are not respoonsible if you misuse this tool *****************"
+echo"************************** Developed by bhanugoud ***********************************"
+echo"*** Before running this script please install anonsurf from the git hub repositor ***"
+echo"** Link for the github respository 'https://github.com/Und3rf10w/kali-anonsurf.git'**"
+echo"*** After cloning the repository change the directory & run the installer.sh file ***"
+
+
+#calling anonsurf
+echo	'#######################################################################  YOUR RUNNING IPCHANGER IT CHANGE IP FOR EVERY 10s  ###########################################################' 
+echo 	'Do you want to start ipchanger :  1.YES  2.NO '
+read INPUT
+if [[ $INPUT == 1 ]] || [[ $INPUT == 'YES' ]] || [[ $INPUT == 'yes' ]] ;
+then
+	anonsurf start
+	sleep 6s ;
+	while true;
+		do
+			echo 'chaning ip........'
+			anonsurf change
+			sleep 5s
+			clear
+	done;
+else 
+	echo 'your exiting for ipchnager.......' ;
+fi;
